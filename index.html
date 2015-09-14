@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/materialize.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-1.11.2.js"></script>
     <script src="js/scripts.js"></script>
     <title>Address</title>
@@ -11,40 +10,34 @@
   <body>
   <div class="container">
     <h1>Address book</h1>
-
     <div class="row">
       <div class="col-md-6">
-        <h2>Add a contact:</h2>
         <form id="new-contact">
           <div class="form-group">
-            <label for="new-first-name">First name</label>
             <input type="text" class="form-control" id="new-first-name" placeholder="First Name">
           </div>
           <div class="form-group">
-            <label for="new-last-name">Last name</label>
-            <input type="text" class="form-control" id="new-last-name">
+            <input type="text" class="form-control" id="new-last-name" placeholder="Last Name">
           </div>
 
           <div id="new-addresses">
             <div class="new-address">
               <div class="form-group">
-                <label for="new-street">Street</label>
-                <input type="text" class="form-control new-street">
+                <input type="text" class="form-control new-street" placeholder="Street">
               </div>
               <div class="form-group">
-                <label for="new-city">City</label>
-                <input type="text" class="form-control new-city">
+                <input type="text" class="form-control new-city" placeholder="City">
               </div>
               <div class="form-group">
-                <label for="new-state">State</label>
-                <input type="text" class="form-control new-state">
+                <input type="text" class="form-control new-state" placeholder="State">
               </div>
             </div>
           </div>
-
-          <span class="btn btn-primary" id="add-address">Another address</span>
+          <div class="buttons">
 
           <button type="submit" class="btn">Add</button>
+          <span class="btn btn-primary" id="add-address">Another address</span>
+          </div>
         </form>
 
         <h2>Contacts:</h2>
